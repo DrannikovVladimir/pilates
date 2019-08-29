@@ -1,0 +1,23 @@
+.page-nav {
+  position: absolute;
+  top: 250px;
+  // transform: translateY(-40%);
+  right: -50px;
+
+  color: $text-color;
+  @include Roboto_regular(16px, 30px);
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    bottom: -185px;
+    left: 7px;
+
+    width: 5px;
+    height: 175px;
+
+    background-image: url('../img/icon-nav.svg');
+  }
+
+}

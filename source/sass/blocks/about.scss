@@ -1,0 +1,161 @@
+.about {
+  margin-bottom: 100px;
+
+  overflow: hidden;
+}
+
+.about__wrapper {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 50px 330px;
+
+  background-image: url('../img/about-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right 100px;
+  background-size: 855px auto;
+}
+
+.about__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 60px;
+  padding-left: 60px;
+
+  @include Roboto_regular(48px, 72px);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+
+    width: 38px;
+    height: 3px;
+
+    background-color: $text-color;
+    opacity: 0.7;
+  }
+}
+
+.about__text {
+  width: 385px;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include Roboto_light(16px, 24px);
+}
+
+.about__details {
+  position: relative;
+
+  width: 115px;
+  padding-right: 30px;
+
+  @include Roboto_medium(14px, auto);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $bg-color-dark;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 10px;
+    height: 15px;
+
+    background-image: url('../img/arrow-details.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    color: darken($bg-color-dark, 15%);
+  }
+
+  &:active {
+    color: lighten($bg-color-dark, 30%);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 1265px) {
+  .about__wrapper {
+    width: 740px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 110px;
+
+    background-image: url('../img/about-bg-tablet.png');
+    background-position: bottom right 50px;
+    background-size: 417px auto;
+  }
+
+  .about__title {
+    font-size: 24px;
+    line-height: 30px;
+
+    &::before {
+      height: 2px;
+      top: 15px;
+    }
+  }
+
+  .about__text {
+    width: 305px;
+  }
+}
+
+@media (max-width: 740px) {
+  .about__wrapper {
+    width: 320px;
+    padding: 0 20px 170px;
+
+    background-image: url('../img/about-bg-mobile.png');
+    background-position: bottom center;
+    background-size: 281px auto;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+    padding-left: 40px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    &::before {
+      top: 10px;
+      width: 30px;
+    }
+  }
+
+  .about__text {
+    width: 280px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about__details {
+    width: 100px;
+
+    font-size: 12px;
+    line-height: 18px;
+
+    &::after {
+      top: 1px;
+    }
+  }
+}
