@@ -20,13 +20,7 @@
 }
 
 .about__title {
-  position: relative;
-
-  margin: 0;
   margin-bottom: 60px;
-  padding-left: 60px;
-
-  @include Roboto_regular(48px, 72px);
 
   &::before {
     content: '';

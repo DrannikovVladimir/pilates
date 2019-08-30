@@ -1,7 +1,6 @@
 .page-nav {
   position: absolute;
   top: 250px;
-  // transform: translateY(-40%);
   right: -50px;
 
   color: $text-color;
@@ -19,5 +18,13 @@
 
     background-image: url('../img/icon-nav.svg');
   }
+  &--price {
+    top: 300px;
+  }
+}
 
+@media (max-width: 1265px) {
+  .page-nav {
+    display: none;
+  }
 }

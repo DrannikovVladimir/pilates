@@ -346,7 +346,7 @@ img {
 
 .button {
   display: block;
-  padding: 20px 30px;
+  padding: 19px 30px 20px;
   font-family: 'Roboto', 'Tahoma', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -366,6 +366,48 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.title {
+  position: relative;
+  margin: 0;
+  padding-left: 60px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px; }
+  .title::before {
+    content: '';
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 38px;
+    height: 3px;
+    background-color: #242424;
+    opacity: 0.7; }
+
+.button--arrow {
+  position: relative; }
+  .button--arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -35px;
+    width: 72px;
+    height: 12px;
+    background-image: url("../img/arrow-button.png");
+    background-repeat: no-repeat;
+    background-position: center right; }
+
+@media (max-width: 1265px) {
+  .button--arrow::before {
+    right: -25px;
+    width: 40px; } }
+
+@media (max-width: 740px) {
+  .button--arrow::before {
+    right: -25px;
+    width: 55px; } }
 
 .page-header {
   position: relative;
@@ -422,16 +464,6 @@ input[type="radio"].visually-hidden {
   line-height: auto;
   color: #fff;
   background-color: transparent; }
-  .page-header__button::before {
-    content: '';
-    position: absolute;
-    top: 22px;
-    right: -35px;
-    width: 72px;
-    height: 12px;
-    background-image: url("../img/arrow-button.png");
-    background-repeat: no-repeat;
-    background-position: center; }
   .page-header__button:hover {
     background-color: #fff;
     color: #91aa59; }
@@ -509,6 +541,12 @@ input[type="radio"].visually-hidden {
     width: 5px;
     height: 175px;
     background-image: url("../img/icon-nav.svg"); }
+  .page-nav--price {
+    top: 300px; }
+
+@media (max-width: 1265px) {
+  .page-nav {
+    display: none; } }
 
 .nav {
   display: flex;
@@ -608,14 +646,7 @@ input[type="radio"].visually-hidden {
   background-size: 855px auto; }
 
 .about__title {
-  position: relative;
-  margin: 0;
-  margin-bottom: 60px;
-  padding-left: 60px;
-  font-family: 'Roboto', 'Tahoma', sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 72px; }
+  margin-bottom: 60px; }
   .about__title::before {
     content: '';
     position: absolute;
@@ -707,3 +738,172 @@ input[type="radio"].visually-hidden {
     line-height: 18px; }
     .about__details::after {
       top: 1px; } }
+
+.price {
+  margin-bottom: 100px;
+  overflow: hidden; }
+
+.price__wrapper {
+  position: relative;
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 50px; }
+
+.price__title {
+  margin-bottom: 60px; }
+
+.price-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.price-list__item {
+  position: relative;
+  padding: 190px 80px 100px 70px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #91aa59; }
+  .price-list__item::before {
+    position: absolute;
+    top: 60px;
+    right: 54px;
+    font-family: 'Roboto', 'Tahoma', sans-serif;
+    font-weight: 700;
+    font-size: 210px;
+    line-height: 210px;
+    opacity: 0.1; }
+  .price-list__item--new {
+    background-color: rgba(145, 170, 89, 0.5); }
+    .price-list__item--new::before {
+      content: '01'; }
+  .price-list__item--proffy {
+    background-color: rgba(145, 170, 89, 0.75); }
+    .price-list__item--proffy::before {
+      content: '02'; }
+  .price-list__item--master::before {
+    content: '03'; }
+
+.price-list__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+  .price-list__item-title span {
+    display: block;
+    font-size: 28px;
+    letter-spacing: 2.5px; }
+
+.price-list__item-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: bold; }
+
+.price-list__schedule {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 32px; }
+
+.price-list__schedule-day {
+  padding-right: 10px; }
+
+.price-list__item-button {
+  position: relative;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: auto;
+  color: inherit;
+  background-color: transparent; }
+  .price-list__item-button:hover {
+    background-color: #fff;
+    color: #91aa59; }
+  .price-list__item-button:active {
+    background-color: #e6e6e6;
+    border-color: #e6e6e6; }
+
+@media (max-width: 1265px) {
+  .price__wrapper {
+    width: 740px; }
+  .price-list {
+    grid-gap: 11px; }
+  .price__title {
+    font-size: 25px;
+    line-height: auto; }
+  .price-list__item {
+    padding: 100px 30px 40px; }
+    .price-list__item::before {
+      top: 40px;
+      right: 30px;
+      font-family: 'Roboto', 'Tahoma', sans-serif;
+      font-weight: 700;
+      font-size: 115px;
+      line-height: 115px;
+      opacity: 0.1; }
+  .price-list__item-title {
+    margin-bottom: 15px;
+    font-size: 12px; }
+    .price-list__item-title span {
+      font-size: 18px; }
+  .price-list__item-subtitle {
+    margin-bottom: 15px;
+    font-size: 16px; }
+  .price-list__schedule {
+    font-size: 16px; }
+  .price-list__item-button {
+    padding: 9px 25px;
+    width: auto;
+    font-size: 14px; } }
+
+@media (max-width: 740px) {
+  .price__wrapper {
+    width: 320px;
+    padding: 0 20px; }
+  .price__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: auto; }
+  .price-list {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 20px; }
+  .price-list__item {
+    padding-left: 50px;
+    padding-right: 40px; }
+    .price-list__item::before {
+      top: 20px;
+      right: 20px;
+      font-family: 'Roboto', 'Tahoma', sans-serif;
+      font-weight: 700;
+      font-size: 135px;
+      line-height: 135px;
+      opacity: 0.1; }
+  .price-list__item-title {
+    font-size: 14px; }
+    .price-list__item-title span {
+      font-size: 22px; }
+  .price-list__item-subtitle {
+    font-size: 18px; }
+  .price-list__schedule {
+    line-height: 24px; }
+  .price-list__item-button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 16px; } }

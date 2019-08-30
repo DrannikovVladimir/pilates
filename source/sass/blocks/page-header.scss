@@ -59,21 +59,6 @@
 
   background-color: transparent;
 
-  &::before {
-    content: '';
-
-    position: absolute;
-    top: 22px;
-    right: -35px;
-
-    width: 72px;
-    height: 12px;
-
-    background-image: url('../img/arrow-button.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   &:hover {
     background-color: #fff;
     color: $bg-color-dark;

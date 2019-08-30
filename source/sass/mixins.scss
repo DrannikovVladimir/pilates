@@ -18,3 +18,10 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin Roboto_bold($font-size: 18px, $line-height: 24px) {
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: $line-height;
+}
