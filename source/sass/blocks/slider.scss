@@ -1,0 +1,154 @@
+.slider {
+  position: relative;
+}
+
+.slider__list {
+  position: relative;
+
+  width: 975px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+
+  padding: 110px 140px 110px 380px;
+
+  box-shadow: 0 9px 23px 9px rgba(33, 33, 33, 0.04);
+
+  background-repeat: no-repeat;
+  background-position: left 140px top 120px, right 80px top 80px;
+  background-size: 185px auto, 103px auto;
+
+  &:nth-child(1) {
+    background-image: url('../img/slider-photo-1.jpg'), url('../img/slider-bg.png');
+  }
+
+  &:nth-child(2) {
+    background-image: url('../img/slider-photo-2.jpg'), url('../img/slider-bg.png');
+  }
+
+  &:nth-child(3) {
+    background-image: url('../img/slider-photo-3.jpg'), url('../img/slider-bg.png');
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__item-title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  @include Roboto_regular(28px, 36px);
+}
+
+.slider__item-subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.slider__item-age {
+  margin: 0;
+  margin-right: 20px;
+
+  @include Roboto_regular(18px, 20px);
+}
+
+.slider__item-text {
+  width: 420px;
+  margin: 0;
+
+  @include Roboto_light(16px, 24px);
+}
+
+.slider-switches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+
+  list-style: none;
+}
+
+.slider-switches__item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider-switches__button {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  border: none;
+
+  background-color: transparent;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+
+    background-color: $bg-color-light;
+  }
+
+  cursor: pointer;
+}
+
+.active::before {
+  width: 15px;
+  height: 15px;
+  background-color: $bg-color-dark;
+}
+
+.slider__button {
+  position: absolute;
+  top: 180px;
+
+  width: 20px;
+  height: 37px;
+  border: none;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px auto;
+
+  cursor: pointer;
+
+  &--left {
+    left: 20px;
+    background-image: url('../img/arrow-left.svg');
+  }
+
+  &--right {
+    right: 20px;
+    background-image: url('../img/arrow-right.svg');
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

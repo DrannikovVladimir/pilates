@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  a {
+    display: block;
+    width: 25px;
+    height: 17px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &--vkontakte {
+    a {
+      background-image: url('../img/icon-vk.svg');
+      background-size: 25px 14px;
+    }
+  }
+
+  &--instagram {
+    a {
+      background-image: url('../img/icon-insta.svg');
+      background-size: 17px 17px;
+    }
+  }
+}

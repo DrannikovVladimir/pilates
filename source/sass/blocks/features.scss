@@ -161,6 +161,7 @@
   .features-list__item {
     min-height: auto;
     &--first {
+      margin-bottom: 20px;
       padding: 0;
 
       background-position: top 20px center;
@@ -172,39 +173,48 @@
     }
 
     &--second {
-      padding-top: 130px;
-      padding-left: 360px;
-      min-height: 372px;
-      margin-bottom: 100px;
+      padding: 0;
+      margin-bottom: 30px;
 
-      background-position: left 60px center;
+      background-image: url('../img/features-mobile-2.png');
+      background-position: left 25px top 10px;
       background-size: 236px auto;
+
+      .features-list__item-title {
+        margin-bottom: 300px;
+        padding-top: 50px;
+      }
     }
 
     &--third {
-      margin-bottom: 100px;
-      padding-top: 30px;
-      padding-left: 60px;
-      min-height: 254px;
+      margin-bottom: 30px;
+      padding: 0;
 
-      background-position: right center;
-      background-size: 294px auto;
+      background-position: left top 40px;
+      background-size: 259px auto;
+
+      .features-list__item-title {
+        margin-bottom: 260px;
+      }
 
       .features-list__item-text {
-        width: 250px;
+        width: auto;
       }
     }
 
     &--fourth {
-      padding-top: 120px;
-      padding-left: 400px;
-      min-height: 391px;
+      padding: 0;
+      min-height: none;
 
-      background-position: left center;
-      background-size: 391px auto;
+      background-image: url('../img/features-mobile-4.png');
+      background-position: right top 40px;
+      background-size: 280px auto;
 
+      .features-list__item-title {
+        margin-bottom: 260px;
+      }
       .features-list__item-text {
-        width: 280px;
+        width: auto;
       }
     }
   }
