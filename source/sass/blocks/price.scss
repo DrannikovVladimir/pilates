@@ -126,6 +126,24 @@
 
 @media (max-width: 1265px) {
   .price__wrapper {
+    width: 992px;
+  }
+
+  .price-list__item {
+    padding: 100px 30px 40px;
+
+    &::before {
+      top: 30px;
+      right: 30px;
+
+      @include Roboto_bold(145px, 145px);
+      opacity: 0.1;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .price__wrapper {
     width: 740px;
   }
 
@@ -179,13 +197,17 @@
 }
 
 @media (max-width: 740px) {
+  .price {
+    margin-bottom: 60px;
+  }
+
   .price__wrapper {
     width: 320px;
     padding: 0 20px;
   }
 
   .price__title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     font-size: 18px;
     line-height: auto;

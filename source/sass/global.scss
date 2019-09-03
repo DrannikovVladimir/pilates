@@ -143,4 +143,17 @@ input[type="radio"].visually-hidden {
       width: 55px;
     }
   }
+  .title {
+    padding-left: 40px;
+
+    &::before {
+      bottom: 35px;
+
+      width: 28px;
+      height: 2px;
+
+      background-color: $text-color;
+      opacity: 0.7;
+    }
+  }
 }

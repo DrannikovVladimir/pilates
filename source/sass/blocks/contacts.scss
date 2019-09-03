@@ -1,0 +1,82 @@
+.contacts__wrapper {
+  position: relative;
+
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.contacts__title {
+  margin-bottom: 60px;
+}
+
+.contacts__address {
+  position: absolute;
+  top: 132px;
+  left: 50px;
+}
+
+.contacts__map {
+  width: 100%;
+  min-height: 510px;
+
+  background-image: url('../img/map-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1265px) {
+  .contacts__wrapper {
+    width: 992px;
+  }
+
+  .contacts__address {
+    top: 132px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts__wrapper {
+    width: 740px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .contacts__address {
+    top: 92px;
+  }
+
+  .contacts__map {
+    min-height: 355px;
+
+    background-image: url('../img/map-tablet.jpg');
+    background-size: 1260px auto;
+  }
+}
+
+@media (max-width: 740px) {
+  .contacts__wrapper {
+    width: 320px;
+    padding: 0 20px;
+  }
+
+  .contacts__title {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .contacts__address {
+    position: static;
+  }
+
+  .contacts__map {
+    min-height: 280px;
+
+    background-image: url('../img/map-mobile.jpg');
+    background-size: 862px auto;
+  }
+}

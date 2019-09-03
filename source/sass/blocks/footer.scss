@@ -1,0 +1,37 @@
+.page-footer {
+  background-color: $bg-color-dark;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1265px;
+  margin: 0 auto;
+  padding: 40px 50px;
+}
+
+.page-footer__copy {
+  margin: 0;
+
+  @include Roboto-light(14px, 22px);
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+
+@media (max-width: 1265px) {
+  .page-footer__wrapper {
+    width: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  .page-footer__wrapper {
+    flex-direction: column;
+    min-height: 240px;
+  }
+
+  .page-footer__copy {
+    order: 2;
+  }
+}
