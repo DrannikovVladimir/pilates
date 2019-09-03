@@ -3,6 +3,8 @@
 }
 
 .feedback__wrapper {
+  position: relative;
+
   width: 1265px;
   margin: 0 auto;
   padding: 0 50px;
@@ -11,4 +13,25 @@
 .feedback__title {
   margin: 0;
   margin-bottom: 40px;
+}
+
+@media (max-width: 1265px) {
+  .feedback__wrapper {
+    width: 740px;
+  }
+
+  .feedback__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 740px) {
+  .feedback__wrapper {
+    width: 320px;
+    padding: 0 20px;
+  }
+
+  .feedback__title {
+    font-size: 18px;
+  }
 }

@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding-left: 60px;
-  @include Roboto_regular(48px, 72px);
+  @include Roboto_medium(48px, 72px);
 
   &::before {
     content: '';

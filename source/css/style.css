@@ -372,7 +372,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-left: 60px;
   font-family: 'Roboto', 'Tahoma', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 48px;
   line-height: 72px; }
   .title::before {
@@ -1076,6 +1076,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 100px; }
 
 .feedback__wrapper {
+  position: relative;
   width: 1265px;
   margin: 0 auto;
   padding: 0 50px; }
@@ -1083,6 +1084,19 @@ input[type="radio"].visually-hidden {
 .feedback__title {
   margin: 0;
   margin-bottom: 40px; }
+
+@media (max-width: 1265px) {
+  .feedback__wrapper {
+    width: 740px; }
+  .feedback__title {
+    font-size: 24px; } }
+
+@media (max-width: 740px) {
+  .feedback__wrapper {
+    width: 320px;
+    padding: 0 20px; }
+  .feedback__title {
+    font-size: 18px; } }
 
 .slider {
   position: relative; }
@@ -1198,6 +1212,53 @@ input[type="radio"].visually-hidden {
     opacity: 0.3; }
   .slider__button:active {
     opacity: 0.6; }
+
+@media (max-width: 1265px) {
+  .slider__list {
+    width: 515px; }
+  .slider__item {
+    padding: 25px 34px 55px 160px;
+    background-position: left 34px top 57px, right 25px top 25px;
+    background-size: 98px auto, 41px auto; }
+  .slider__item-title {
+    margin-bottom: 0;
+    font-size: 18px; }
+  .slider__item-subtitle {
+    margin-bottom: 20px;
+    font-size: 14px; }
+  .slider__item-text {
+    width: 300px;
+    line-height: 20px; }
+    .slider__item-text span {
+      display: none; }
+  .slider-switches__button::before {
+    width: 6px;
+    height: 6px; }
+  .active::before {
+    width: 8px;
+    height: 8px; }
+  .slider__button {
+    top: 100px; } }
+
+@media (max-width: 740px) {
+  .slider__list {
+    width: auto;
+    margin-top: -30px; }
+  .slider__item {
+    padding: 150px 15px 40px;
+    text-align: center;
+    background-position: center top 40px, top 10px right 10px;
+    background-size: 100px auto, 40px auto; }
+  .slider__item-title {
+    font-size: 16px; }
+  .slider__item-subtitle {
+    justify-content: center;
+    font-size: 14px; }
+  .slider__item-text {
+    width: 250px;
+    font-size: 14px; }
+  .slider__button {
+    display: none; } }
 
 .social {
   display: flex;
