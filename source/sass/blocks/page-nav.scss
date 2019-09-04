@@ -18,9 +18,15 @@
 
     background-image: url('../img/icon-nav.svg');
   }
+
   &--price {
     top: 300px;
   }
+
+  &--feedback {
+    top: 210px;
+  }
+  z-index: 1000;
 }
 
 @media (max-width: 1265px) {

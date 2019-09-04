@@ -5,6 +5,7 @@ var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var svgo = require('gulp-svgo');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function () {
   return gulp.src('source/sass/style.scss')
@@ -30,6 +31,16 @@ gulp.task('svg', function () {
   return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('source/img'))
+});
+
+gulp.task('images', function () {
+  return gulp.src('source/img/**/*.{png,jpg,svg}')
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLeve: 5}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest('source/img'));
 });
 
 gulp.task('start', gulp.series('sass', 'server'));

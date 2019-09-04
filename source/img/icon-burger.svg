@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewbox="0 0 23 16">
-  <defs>
-    <clipPath id="a">
-      <path d="M-.039 8.002h23.026"/>
-    </clipPath>
-    <clipPath id="b">
-      <path d="M-.04 14.99h23.025"/>
-    </clipPath>
-    <clipPath id="c">
-      <path d="M-.023.997h14.002"/>
-    </clipPath>
-  </defs>
-  <path fill="#ffffff" stroke="#ffffff" stroke-miterlimit="50" stroke-width="4" d="M-.039 8.002h23.026"/>
-  <path fill="#ffffff" stroke="#ffffff" stroke-miterlimit="50" stroke-width="4" d="M-.04 14.99h23.025"/>
-  <path fill="#ffffff" stroke="#ffffff" stroke-miterlimit="50" stroke-width="4" d="M-.023.997h14.002"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="16"><path fill="#fff" stroke="#fff" stroke-miterlimit="50" stroke-width="4" d="M-.039 8.002h23.026M-.04 14.99h23.025M-.023.997h14.002"/></svg>

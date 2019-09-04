@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41">
-  <defs>
-    <clipPath id="a">
-      <path fill="#555" d="M.992 39.553L39.102.992"/>
-    </clipPath>
-    <clipPath id="b">
-      <path fill="#555" d="M2.898.992l38.11 38.561"/>
-    </clipPath>
-  </defs>
-  <path fill="#fff" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M.992 39.553L39.102.992"/>
-  <path fill="#fff" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M2.898.992l38.11 38.561"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="41"><path fill="#fff" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M.992 39.553L39.102.992m-36.204 0l38.11 38.561"/></svg>

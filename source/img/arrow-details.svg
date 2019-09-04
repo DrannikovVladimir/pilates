@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15">
-  <defs>
-    <clipPath id="fgyea">
-      <path fill="#91aa59" d="M1.409.902l6.603 6.49-6.601 6.494"/>
-    </clipPath>
-  </defs>
-  <g>
-    <g>
-      <path fill="none" stroke="#91aa59" stroke-miterlimit="50" stroke-width="4" d="M1.409.902v0l6.603 6.49v0l-6.601 6.494v0" clip-path="url(&quot;#fgyea&quot;)"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="15"><defs><clipPath id="a"><path fill="#91aa59" d="M1.409.902l6.603 6.49-6.601 6.494"/></clipPath></defs><path fill="none" stroke="#91aa59" stroke-miterlimit="50" stroke-width="4" d="M1.409.902v0l6.603 6.49v0l-6.601 6.494v0" clip-path="url(&quot;#a&quot;)"/></svg>

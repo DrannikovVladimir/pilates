@@ -1,5 +1,7 @@
 .feedback {
   margin-bottom: 100px;
+
+  overflow: hidden;
 }
 
 .feedback__wrapper {
@@ -8,8 +10,6 @@
   width: 1265px;
   margin: 0 auto;
   padding: 0 50px;
-
-  overflow: hidden;
 }
 
 .feedback__title {
